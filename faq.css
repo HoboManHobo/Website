@@ -1,0 +1,323 @@
+ @import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-image: linear-gradient(rgba(42,58,74,0.85),rgba(42,58,74,0.85)), url(volunteer.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    position:relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg1{
+    background-image:url(volunteer.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height:100%;
+}
+
+.pimg1{
+    position:relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transiition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+#main {
+    background: transparent;
+    width: 100%;
+    height: 50px;
+}
+
+#main .logo{
+    float: left;
+}
+
+.logo {
+    background: url(logo.png);
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+#main nav ul {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#main nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 50px;
+}
+
+#main nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 13px;
+    transition: 0.4s all ease-out;
+}
+
+#main nav ul li a.active,
+#main nav ul li a:hover {
+    background: #fd4a47;
+    color: #fff;
+    transition: 0.4s all ease-out;
+}
+
+#main nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+}
+
+#main nav ul li a:hovor::after{
+    width: 50%;
+}
+
+.text-box{
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: -500px;
+}
+
+.text-box p{
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.text-box h1{
+    font-size: 150px;
+    line-height: 160px;
+    margin-left: 60px;
+    margin-top: 10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.text-box h2{
+    color: #fff;
+    font-size: 1.1em;
+    font-family: 'Signika', sans-serif;
+    margin-left: 70px;
+    margin-top: 10px;
+    left: 50px;
+    position: center;
+    bottom: -20px;
+    width: 100%;
+    height: 100px;
+}
+
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+.text-box .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+.text-box a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    margin-left: 70px;
+    margin-top: 20px;
+    line-height: 80px;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#2e465f,transparent);
+}
+
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #2e465f;
+
+}
+
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-image: linear-gradient(rgba(42,58,74,0.85),rgba(42,58,74,0.85));
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    background: #2e465f;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Muli:wght@400;500&display=swap");
+
+body {
+  font-family: "Baloo Bhai 2", cursive;
+  background-color: #eeeeee;
+}
+
+.containerFluid {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
+
+}
+
+.containerFluid h2 {
+  color: hotpink;
+  position: relative;
+  width: 100%;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+.containerFluid h2::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 12px;
+  width: 67px;
+  height: 2px;
+  background-color: hotpink;
+}
+
+.accordion {
+  width: 100%;
+  padding: 0 5px;
+  border: 2px solid #6db5ff;
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  background-color: #ADD8E6;
+}
+
+.accordion .icons {
+  margin: 0 10px 0 0;
+  width: 30px;
+  height: 30px;
+  background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
+    no-repeat 8px 7px #6db5ff;
+  border-radius: 50%;
+  float: left;
+  transition: all 0.5s ease-in;
+}
+
+.accordion h5 {
+  font-size: 22px;
+  margin: 0;
+  padding: 3px 0 0 0;
+  font-weight: normal;
+  color: #1f5c9a;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+.active {
+  background-color: #6db5ff;
+  color: #fff;
+}
+
+.active .icons {
+  background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
+    no-repeat 8px -25px #fff;
+}
+
+.panel {
+  padding: 0 15px;
+  border-left: 1px solid #6db5ff;
+  margin-left: 25px;
+  font-size: 23px;
+  text-align: justify;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in;
+  color: #fff;
+}
+
+.panel p {
+  padding: 0 15px;
+  border-left: 1px solid #6db5ff;
+  margin-left: 25px;
+  font-size: 23px;
+  text-align: justify;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in;
+  color: #fff;
+}

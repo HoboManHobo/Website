@@ -1,0 +1,362 @@
+html, body {
+    width: 100%;
+    height: 100%;
+background-image: linear-gradient(rgba(42,58,74,0.85),rgba(42,58,74,0.85)), url(volunteer.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    position:relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+#content_container {
+    width: 30%;
+    height: 350px;
+}
+
+#form_container {
+    width: 100%;
+    height: 100%;
+
+    background-color: #370617;
+    box-shadow: 0 0 50px -20px #000;
+    border-radius: 2%;
+
+    overflow: hidden;
+}
+
+#form_header_container {
+    width: 100%;
+    height: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    border-bottom: 1px solid transparent;
+    border-image: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF) 20;
+    background: #000;
+}
+
+#form_header {
+    display: inline-block;
+    font-size: 15px;
+    font-family: Bowlby One SC;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+
+    background: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+#form_content_container {
+    width: 100%;
+    height: 90%;
+
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 30px;
+}
+
+#form_content_inner_container {
+    width: 75%;
+    height: 100%;
+
+    float: left;
+
+}
+
+input {
+    width: 100%;
+    height: 40px;
+
+    padding-left: 10px;
+    margin-bottom: 20px;
+
+    background: #000;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #fff;
+    font-size: 12px;
+
+    border-bottom: 2px solid transparent;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-image: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF) 1;
+}
+
+#button_container {
+    width: 100%;
+    height: 10%;
+
+    background-image: linear-gradient(80deg, #FFBE0B, #FB5607 50%, #FF006E 50%, #8338EC);
+    color: #fff;
+
+    float: left;
+
+    margin-top: 5px;
+}
+
+#button_container button {
+    width: 50%;
+    height: 100%;
+    float: left;
+
+    background: transparent;
+    color: inherit;
+
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.disappear
+{
+    width: 0%;
+    height: 0px;
+
+    padding-left: 0px;
+    margin-bottom: 0px;
+    opacity: 0;
+    background: #000;
+    font-family: Montserrat;
+    font-weight: 0;
+    color: #fff;
+    font-size: 0px;
+
+    border-bottom: 0px solid transparent;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+
+}
+
+ @import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@500&display=swap');
+header {
+    background-image: linear-gradient(rgba(42,58,74,0.85),rgba(42,58,74,0.85)), url(volunteer.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    position:relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg1{
+    background-image:url(volunteer.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height:100%;
+    width:100%;
+}
+
+.pimg1{
+    position:relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transiition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.logo {
+    background: url(logo.png);
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+#main nav ul {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#main nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 50px;
+}
+
+#main nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 13px;
+    transition: 0.4s all ease-out;
+}
+
+#main nav ul li a.active,
+#main nav ul li a:hover {
+    background: #fd4a47;
+    color: #fff;
+    transition: 0.4s all ease-out;
+}
+
+#main nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+}
+
+#main nav ul li a:hovor::after{
+    width: 50%;
+}
+
+.text-box{
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: -500px;
+}
+
+.text-box p{
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.text-box h1{
+    font-size: 150px;
+    line-height: 160px;
+    margin-left: 60px;
+    margin-top: 10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.text-box h2{
+    color: #fff;
+    font-size: 1.1em;
+    font-family: 'Signika', sans-serif;
+    margin-left: 70px;
+    margin-top: 10px;
+    left: 50px;
+    position: center;
+    bottom: -20px;
+    width: 100%;
+    height: 100px;
+}
+
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+.text-box .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+.text-box a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    margin-left: 70px;
+    margin-top: 20px;
+    line-height: 80px;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#2e465f,transparent);
+}
+
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #2e465f;
+}
+
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.icon {
+    background: url(icon.png);
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    margin-left: 1px;
+    margin-top: 1px;

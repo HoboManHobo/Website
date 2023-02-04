@@ -1,0 +1,57 @@
+<div class="pimg1">
+     <header>
+         <div id="main">
+             <div class="logo"></div>
+             <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Todo List 2022 with LocalStorage</title>
+	<!-- CSS Import -->
+	<link rel="stylesheet" href="addWebsite.css" />
+	<!-- End of CSS Import -->
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+	<!-- End of Fonts -->
+</head>
+
+
+
+<head>
+  <script type="text/javascript">
+    function convert()
+    {
+	  var text=document.getElementById("url").value;
+	  var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+	  var text1=text.replace(exp, "<a href='$1'>$1</a>");
+	  var exp2 =/(^|[^\/])(www\.[\S]+(\b|$))/gim;
+	  document.getElementById("converted_url").innerHTML=text1.replace(exp2, '$1<a target="_blank" href="http://$2">$2</a>');
+    }
+  </script>
+</head>
+
+<body>
+  
+  <h3>Convert URL Text Into Clickable HTML Link Using JavaScript</h1>
+  <textarea id="url" Placeholder="Enter Some Text With Links">
+  </textarea>
+  <input type="button" value="Convert" onclick="convert();">
+  <h3 id="converted_url"></h3>
+
+
+
+
+</body>
+</html>
